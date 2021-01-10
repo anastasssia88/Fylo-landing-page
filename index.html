@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <!--  Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+  
+  <!--  Tailwind CDN -->
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+
+  <!--  Custom CSS -->
+  <link rel="stylesheet" href="./main.css">
+
+  <!--  Form Validation -->
+  <script defer src="./script.js"></script>
+
+  <title>Fylo</title>
+
+</head>
+
+
+
+
+
+
+
+
+
+<body>
+
+<!--  Navigation -->
+  <header>
+    <nav class="mx-8 my-8 flex md:my-14 md:mx-20">
+      <img class="max-h-6 sm:max-h-10" src="./images/logo.svg" alt="logo">
+      <div class="ml-auto">
+        <a class="mx-2 text-gray-500 text-sm" href="#">Features</a>
+        <a class="mx-2 text-gray-500 text-sm" href="#">Team</a>
+        <a class="mx-2 text-gray-500 text-sm" href="#">Sign In</a>
+      </div>
+    </nav>
+  </header>
+
+<!--  Hero section -->
+  <section class="mx-10 md:grid md:grid-cols-2 md:gap-5 sm:mt-20 sm:mx-20">
+
+    <!-- child one -->
+    <div class="sm:order-2 h-96 w-full mt-22 sm:mt-0 bg-center svg-one">
+      <!--<img class="h-64 mt-28 sm:mt-0 object-cover object-center" src="./images/illustration-1.svg" alt="file-storage">-->
+    </div>
+
+    <!-- child two -->
+    <div> 
+        <div>
+          <h1 class="text-2xl text-center mt-2 md:mt-16 -mx-2 leading-9 sm:text-4xl sm:text-left sm:mx-0 sm:pt-0 sm:leading-10">All your files in one secure location, accessible anywhere.</h1>
+          <p class="text-center text-base mt-10 mb-10 text-gray-800 -mx-4 sm:text-left sm:mx-0 sm:mt-6 sm:mb-6">Fylo stores your most important files in one secure location. 
+            Access them wherever you need, share and collaborate with friends, 
+            family, and co-workers.</p>
+        </div>
+
+        <!-- first sign up form -->
+        <div class="sm:flex sm:justify-start sm:mx-0">
+            <div>
+              <form action="/" method="GET">
+                <input class="text-xs border-gray-400 p-2 border rounded 
+                w-full sm:w-64 md:w-80" type="text" id="email" name="email" placeholder="Enter your email..."><br>
+              </form>
+              <div id="error-or-confirmation" class="text-red-700 text-sm"></div>
+            </div>
+
+            <button class="bg-blue-600 text-white mt-3 py-3 rounded w-full 
+            text-xs font-bold hover:bg-blue-700 sm:mt-0 sm:ml-2 sm:py-2 sm:w-36" id="signUp">Get Started</button>
+        </div>
+    </div>
+
+  
+  </section>
+
+<!--  Main content -->
+  <main>
+
+ 
+    <!-- background curve for mobile -->
+    <img class="w-full mt-28 md:hidden" src="./images/bg-curve-mobile.svg" alt="curve-mobile">
+    <!-- background curve for desktop -->
+    <img class="w-full mt-28 hidden md:block" src="./images/bg-curve-desktop.svg" alt="curve-mobile">
+
+  
+    <!--  START content with gray background -->
+    <div class="gray-bg-custom md:grid md:grid-cols-2 md:gap-5 sm:px-20">
+          <div class="px-10 h-96 w-full py-20 sm:mt-0 bg-center svg-two sm:order-2">
+            <!-- <img class="h-50 w-auto py-20" src="./images/illustration-2.svg" alt="team">-->
+          </div>
+
+          <div>
+          
+              <!-- Link -->
+              <div class="mx-5 sm:mx-0">
+                <h3 class="text-lg text-center mt-8 md:mt-16 font-bold md:text-4xl md:text-left">Stay productive, wherever you are</h3>
+                <p class="mt-8 text-gray-800">Never let location be an issue when accessing your files. Fylo has you 
+                  covered for all of your file storage needs.</p>
+                <p class="mt-5 mb-10 text-gray-800">Securely share files and folders with friends, family and colleagues for 
+                  live collaboration. No email attachments required!</p>
+              </div>
+
+              <!-- Link -->
+              <div class="pb-10">
+                <div class="flex justify-center sm:justify-start border-b border-blue-800 mx-24 custom-color sm:mx-0 sm:w-44">
+                  <a class="custom-color" href="#">See how Fylo works</a>
+                  <img class="ml-1 w-4 h-4 self-center" src="./images/icon-arrow.svg" alt="arrow">
+                </div>
+              </div>
+
+              <!-- Testimonial -->
+              <div class="pb-20 md:pb-32">
+                <div class="mr-12 ml-12 py-4 px-4 shadow-xl rounded sm:ml-0 sm:w-96 md:py-8">
+                  <img src="./images/icon-quotes.svg" alt="quotes">
+                  <p class="mt-5 mb-10 text-gray-800 text-sm ">Fylo has improved our team productivity by an order of magnitude. Since 
+                    making the switch our team has become a well-oiled collaboration machine.</p>
+                    
+                    <div class="flex items-center md:-mt-2">
+                      <img class="h-10 w-10 rounded-3xl" src="./images/avatar-testimonial.jpg" alt="client-avatar">
+                      <span class="ml-3">
+                        <p class="text-xs font-bold">Kyle Burton</p>
+                        <p class="text-xs text-gray-500">Founder & CEO, Huddle</p>
+                      </span>
+                    </div>
+                </div>
+              </div>
+          
+          </div>
+
+    <!-- END of content with gray background -->
+    </div>
+
+    <!-- START content with darl blue/gray background -->
+    <div class="px-9 py-16 dark-blue-bg-custom md:grid md:grid-cols-2 md:gap-5 md:px-20">
+
+      <div>
+          <h3 class="text-lg text-center font-bold text-white text-center md:text-2xl md:text-left">Get early access today</h3>
+          <p class="my-6 text-white text-center md:text-left md:mr-36">It only takes a minute to sign up and our free starter tier is extremely generous. 
+            If you have any questions, our support team would be happy to help you.</p>
+      </div>
+
+      <!-- second form -->
+      <div class="pl-8">
+          <form action="/" method="GET">
+            <input class="text-xs border-gray-400 p-2 border 
+            rounded w-full sm:w-64 md:w-96" type="text" id="email_second" name="email" placeholder="Enter your email..."><br>
+          </form>
+          <div id="error-or-confirmation_second"></div>
+          <button class="bg-blue-600 text-white mt-3 py-3 rounded 
+          w-full text-xs font-bold
+          hover:bg-blue-700 sm:w-48" id="signUp_second">Get Started For Free</button>
+      </div>
+
+      <!-- 
+      <div class="sm:flex sm:justify-start sm:mx-0">
+        <div>
+          <form action="/" method="GET">
+            <input class="text-xs border-gray-400 p-2 border rounded 
+            w-full sm:w-64 md:w-80" type="text" id="email" name="email" placeholder="Enter your email..."><br>
+          </form>
+          <div id="error-or-confirmation" class="text-red-700 text-sm"></div>
+        </div>
+
+        <button class="bg-blue-600 text-white mt-3 py-3 rounded w-full 
+        text-xs font-bold hover:bg-blue-700 sm:mt-0 sm:ml-2 sm:py-2 sm:w-36" id="signUp">Get Started</button>
+    </div>-->
+
+
+    </div>
+
+
+  </main>
+
+<!-- Footer -->
+  <footer class="bg-indigo-900 px-8 py-16 md:px-20">
+
+    <div>
+      <img class="mb-8" src="./images/logo-white.svg" alt="">
+    </div>
+
+    <!-- flex container -->
+    <div class="text-white md:grid md:grid-cols-4">
+      <!-- flex item 1 -->
+        <div class="flex items-center">
+            <span>
+              <img class="h-5 mb-5" src="./images/icon-phone.svg" alt="our phone">
+              <img class="h-4" src="./images/icon-email.svg" alt="our email">
+            </span>
+            <span>
+              <p class="ml-4 mb-5">Phone: +1-543-123-4567</p>
+              <p class="ml-4">example@fylo.com</p>
+            </span>
+        </div>
+
+        <!-- flex item 2 -->
+        <div class="mt-10 flex flex-col">
+          <h4 class="font-bold">About Us</h4>
+          <a class="mt-2" href="#">Jobs</a>
+          <a class="mt-2" href="#">Press</a>
+          <a class="mt-2" href="#">Blog</a>
+        </div>
+
+        <!-- flex item 3 -->
+        <div class="mt-10 flex flex-col">
+          <h4 class="font-bold">Contact Us</h4>
+          <a class="mt-2" href="#">Terms</a>
+          <a class="mt-2" href="#">Privacy</a>
+        </div>
+
+        <!-- flex item 4 -->
+        <div class= "flex justify-center md:justify-start mt-12 mb-1">
+          <a href="#"><img class ="h-7"  src="./images/facebook-white.svg" alt=""></a>
+          <a href="#"><img class ="h-7 mx-5" src="./images/twitter-white.svg" alt=""></a>
+          <a href="#"><img class ="h-7" src="./images/instagram-white.svg" alt=""></a>
+        </div>
+      </div>
+
+  </footer>
+
+
+
+</body>
+</html>

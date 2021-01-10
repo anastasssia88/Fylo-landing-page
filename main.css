@@ -1,0 +1,62 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3, h4, h5, button {
+    font-family: 'Raleway', sans-serif;
+}
+
+h1 {
+    font-weight: 700;
+}
+
+h3 {
+    font-weight: 400;
+}
+
+.gray-bg-custom {
+    background-color: #f8f8fe;
+}
+
+.dark-blue-bg-custom {
+    background-color: #575988;
+
+}
+
+.custom-color {
+    border-color: #3ca08f;
+    color: #3ca08f;
+}
+
+.custom-color:hover {
+    color: #4cc5b1;
+}
+
+.border-error {
+    border:2px solid red;
+  }
+
+.svg-one {
+    background-image: url('./images/illustration-1.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.svg-two {
+    background-image: url('./images/illustration-2.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+/*
+
+.flex-item-small {
+    width: 40%;
+    align-self: stretch;
+}
+
+.flex-item-big {
+    width: 60%;
+    align-self: stretch;
+}
+
+*/
